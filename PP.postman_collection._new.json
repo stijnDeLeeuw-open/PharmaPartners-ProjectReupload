@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "361c5ed9-07a0-4e32-aee1-2612e0afe1c9",
+		"name": "PP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get specific currency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCurrencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCurrency",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2,\"name\":\"Bitcoin\",\"tickerCode\":\"BTC\",\"marketCap\":\"437.5B\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/api/currencies/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"api",
+						"currencies",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create currency",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":null,\"name\":\"Bitcoin2\",\"tickerCode\":\"BTC\",\"marketCap\":\"437.5B\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/api/currencies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"api",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete specific currency",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":4,\"name\":\"Bitcoin2\",\"tickerCode\":\"BTC\",\"marketCap\":\"437.5B\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/api/currencies/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"api",
+						"currencies",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
